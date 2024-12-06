@@ -1,0 +1,46 @@
+[project]
+name = "fitness-coach"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Neha Devi Shakya", email = "nehadshakya@gmail.com" }
+]
+dependencies = [
+    "langchain-community>=0.3.8",
+    "langchain-core>=0.3.21",
+    "langchain-openai>=0.2.10",
+    "langchain-text-splitters>=0.3.2",
+    "langchain>=0.3.9",
+    "langgraph-checkpoint>=2.0.7",
+    "langgraph>=0.2.53",
+    "langsmith>=0.1.147",
+    "openai>=1.55.3",
+    "pandas>=2.2.3",
+    "pydantic>=2.10.2",
+    "pyprojroot>=0.3.0",
+    "python-dotenv>=1.0.1",
+    "requests>=2.32.3",
+    "tqdm>=4.67.1",
+    "pydantic-core>=2.27.1",
+    "pypdf>=5.1.0",
+    "pyyaml>=6.0.2",
+    "ipykernel>=6.29.5",
+    "tavily-python>=0.5.0",
+    "pillow>=11.0.0",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fitness_coach"]

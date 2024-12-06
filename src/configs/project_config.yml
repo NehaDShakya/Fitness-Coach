@@ -1,0 +1,6 @@
+langsmith:
+  tracing: "true"
+  project_name: "Fitness Coach"
+
+memory:
+  directory: memory

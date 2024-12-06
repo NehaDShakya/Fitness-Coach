@@ -1,0 +1,19 @@
+primary_agent:
+  llm: gpt-4o-mini
+  llm_temperature: 0.0
+  
+exercise_sqlagent_configs:
+  exercise_sqldb_dir: "data/fitness_coach_sqldb.db"
+  llm: "gpt-3.5-turbo"
+  llm_temperature: 0.0
+
+langsmith:
+  tracing: "true"
+  project_name: "rag_sqlagent_project"
+
+tavily_search_api:
+  tavily_search_max_results: 2
+
+graph_configs:
+  thread_id: 1 # This can be adjusted to assign a unique value for each user session, so it's easier to access data later on.
+  
